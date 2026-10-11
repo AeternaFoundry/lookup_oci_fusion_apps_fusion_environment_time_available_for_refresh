@@ -1,0 +1,6 @@
+data "oci_fusion_apps_fusion_environment_time_available_for_refresh" "fusion_apps_fusion_environment_time_available_for_refresh_lookup" {
+  for_each = var.fusion_apps_fusion_environment_time_available_for_refresh_lookup
+
+  fusion_environment_id = each.value.fusion_environment_id
+}
+
